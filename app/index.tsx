@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Card } from 'react-native-paper';
 
 export default function Index() {
   return (
@@ -9,7 +10,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Card style={{ width: 300, elevation: 4, borderBlockColor: 'blue' }}>
+        <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+      </Card>
     </View>
   );
 }
